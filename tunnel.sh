@@ -39,7 +39,8 @@ while [[ -z "$pass" ]] || [[ "$pass" != "JEA3MDhTbzI0NDBTYTIwMDEK" ]]
 do
     echo -e "\n${Red}Invalid value, Try again${Color_Off}"
     printf "Please enter password : "
-    read pass
+    read -s pass
+    pass=$(echo  "$pass" | base64)
 done
 printf "\n"
 echo -e "${White}Which server are you on now ? ${Color_Off}"
