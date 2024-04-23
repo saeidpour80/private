@@ -35,7 +35,7 @@ printf "\n\n"
 printf "Please enter password : "
 read -s pass
 pass=$(echo  "$pass" | base64)
-while [[ -z "$pass" ]] || [[ "$pass" != "JEA3MDhTbzI0NDBTYTIwMDE=" ]]
+while [[ -z "$pass" ]] || [[ "$pass" != "JEA3MDhTbzI0NDBTYTIwMDEK" ]]
 do
     echo -e "\n${Red}Invalid value, Try again${Color_Off}"
     printf "Please enter password : "
