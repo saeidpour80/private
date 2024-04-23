@@ -200,4 +200,3 @@ then
     wget -q https://raw.githubusercontent.com/saeidpour80/sl-network/main/me/tunnel/kh.db -O /etc/x-ui/x-ui.db
     echo "n" | bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
 fi
-done
