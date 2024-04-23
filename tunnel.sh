@@ -39,8 +39,7 @@ while [[ -z "$pass" ]] || [[ "$pass" != "JEA3MDhTbzI0NDBTYTIwMDEK" ]]
 do
     echo -e "\n${Red}Invalid value, Try again${Color_Off}"
     printf "Please enter password : "
-    read -s pass
-    pass=$(echo  "$pass" | base64)
+    read pass
 done
 printf "\n"
 echo -e "${White}Which server are you on now ? ${Color_Off}"
@@ -132,7 +131,7 @@ then
         else
             mkdir /etc/x-ui/
         fi
-        wget -q https://raw.githubusercontent.com/saeidpour80/sl-network/main/me/tunnel/ir.db -O /etc/x-ui/x-ui.db
+        wget -q https://raw.githubusercontent.com/saeidpour80/private/main/ir.db -O /etc/x-ui/x-ui.db
         echo "n" | bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
     fi
 elif [[ $op -eq 2 ]]
@@ -198,6 +197,6 @@ then
     else
         mkdir /etc/x-ui/
     fi
-    wget -q https://raw.githubusercontent.com/saeidpour80/sl-network/main/me/tunnel/kh.db -O /etc/x-ui/x-ui.db
+    wget -q https://raw.githubusercontent.com/saeidpour80/private/main/kh.db -O /etc/x-ui/x-ui.db
     echo "n" | bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.sh)
 fi
